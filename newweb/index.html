@@ -206,12 +206,18 @@
       // navigation ends here
       $("ul.main-menu li.main-menu-item").click(function(e){
             e.preventDefault();
-
             if($(this).siblings("li").find("ul.submenu:visible").length){
                   $("ul.submenu").slideup("normal");
             }
             $(this).find("ul.submenu").slideToggle("normal");
       });
+
+      // submenu-item 
+      $('.submenu-item').click(function(e){
+            e.preventDefault();
+             location.href = $(this).find('a').attr('href');
+            // location.href= $(this).find('a').attr('href');
+      })
 
 
 
