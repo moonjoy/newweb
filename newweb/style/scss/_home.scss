@@ -339,7 +339,7 @@ h6 {
               background: url(../../images/chapubakha/chapubakha.jpg) no-repeat 40% 50%;
               background-size: cover;
               &::after {
-                  content: "chapu bakha";
+                  content: "chagu bakha";
                   font-family: "Roboto Mono";
                   font-size: 36px;
                   position: relative;
@@ -437,7 +437,7 @@ h6 {
 
   .project-one:hover .project-des1 {
     &::after{
-      content: "Chapu Bakha is an animated short film about ancient folklore about a Diety in the Newar culture in Nepal. I explore digital storytelling with the memories of my hometown and my childhood within the Newari culture.";
+      content: "Chagu Bakha is an animated short film about a Deity from the ancient folklore in the Newar culture in Nepal. I explore digital storytelling with the memories of my hometown and my childhood within the Newari culture.";
       font-size: 15px;
       position: relative;
       color: grey;
@@ -500,7 +500,19 @@ h6 {
     }
   }
 
-
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+      iframe{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}
 
 
 
@@ -653,10 +665,6 @@ h6 {
       background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
 }
 
-.project-image {
-      background: url(https://player.vimeo.com/video/335543463) no-repeat 50% 70%;
-}
-
 /*--------------- contact form --------------- */
 
 #contact-form {
@@ -731,6 +739,22 @@ textarea:focus {
 }
 
 /*--------------- project page --------------- */
+
+.project-image {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.client-images {
+  div {
+      padding: 20px;
+      img {
+        width: 100%;
+    }
+  }
+}
 
 .prev, .next p {
       color: grey;
