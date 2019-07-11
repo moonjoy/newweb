@@ -15,6 +15,12 @@ body {
   width: 100%;
   height: 100px; }
 
+a {
+  color: #fff !important; }
+  a:hover {
+    color: #ccc !important;
+    text-decoration: none !important; }
+
 /*--------------- typewriter effect --------------- */
 .line {
   width: 24em;
@@ -302,6 +308,8 @@ h6 {
       background: url(../../images/mfadt/mfadt.gif) no-repeat 50% 50%;
       cursor: pointer;
       background-size: 100%; }
+    .project.project3.project-web-3::after {
+      content: none; }
   .project.project4 {
     background: url(../../images/micdrop/micdrop.png) no-repeat 50% 50%;
     background-size: cover; }
@@ -322,7 +330,8 @@ h6 {
       background-size: cover; }
 
 .project-one:hover .project-des1::after {
-  content: "Chagu Bakha is an animated short film about a Deity from the ancient folklore in the Newar culture in Nepal. I explore digital storytelling with the memories of my hometown and my childhood within the Newari culture.";
+  content: "Official Selection for #WeAreHereFest Film Festival at the Abrons Art Center in NYC on Sept 5th to Sept 7th, 2019. \A \A Chagu Bakha is an animated short film about a Deity from the ancient folklore in the Newar culture in Nepal. I explore digital storytelling with the memories of my hometown and my childhood within the Newari culture.";
+  white-space: pre-wrap;
   font-size: 15px;
   position: relative;
   color: grey;
@@ -561,10 +570,22 @@ textarea:focus {
   width: 100%;
   height: 100%; }
 
-.client-images div {
-  padding: 20px; }
-  .client-images div img {
-    width: 100%; }
+.client-head {
+  font-size: 1.1rem;
+  color: grey;
+  margin-bottom: 1.2rem; }
+
+.client-images {
+  border-top: 1px solid #191919;
+  border-bottom: 1px solid #191919; }
+  .client-images div {
+    padding: 20px; }
+    .client-images div img {
+      width: 100%; }
+      .client-images div img:hover {
+        cursor: pointer; }
+    .client-images div:hover {
+      background: #ffffff05; }
 
 .prev, .next p {
   color: grey; }
