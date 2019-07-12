@@ -10,13 +10,79 @@ html, body {
 	position: absolute;
 	width: 50%;
 	height: 100vh;
+	font-family: Poppins;
 }
 
 .left-col {
 	background: #d45b48;
+
+	.logo {
+		color: #fff;
+		position: fixed;
+		margin: 1em;
+		font-weight: bolder;
+	}
+
+	.year {
+		position: absolute;
+		color: #000;
+		bottom: 8%;
+		font-weight: bolder;
+		transform: rotate(-90deg);
+		left: 0%;
+	}
+
+	.buy {
+		color: #ccc;
+		position: absolute;
+		right: 0%;
+		top: -2.6%;
+		margin: 1.4em;
+		text-transform: uppercase;
+
+	}
+
+	.cover {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 45%;
+		height: 50%;
+		background: url() no-repeat 50% 50%;
+		background-size: cover;
+		transform: translate(-50%, -50%);
+
+	}
+
+	.data {
+		position: absolute;
+		top: 30%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		color: #000;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+
+	}
 }
 
 .right-col {
 	left: 50%;
 
+	.upper {
+		position: absolute;
+		width: 100%;
+		height: 50vh;
+		background: #ccc;
+	}
+
+	.bottom {
+		position: absolute;
+		top: 50%;
+		height: 50vh;
+		width: 100%;
+		background: url() no-repeat 50% 50%;
+		background-size: cover;
+	}
 }
+

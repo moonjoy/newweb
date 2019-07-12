@@ -8,12 +8,61 @@ html, body {
 .left-col, .right-col {
   position: absolute;
   width: 50%;
-  height: 100vh; }
+  height: 100vh;
+  font-family: Poppins; }
 
 .left-col {
   background: #d45b48; }
+  .left-col .logo {
+    color: #fff;
+    position: fixed;
+    margin: 1em;
+    font-weight: bolder; }
+  .left-col .year {
+    position: absolute;
+    color: #000;
+    bottom: 8%;
+    font-weight: bolder;
+    transform: rotate(-90deg);
+    left: 0%; }
+  .left-col .buy {
+    color: #ccc;
+    position: absolute;
+    right: 0%;
+    top: -2.6%;
+    margin: 1.4em;
+    text-transform: uppercase; }
+  .left-col .cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45%;
+    height: 50%;
+    background: url() no-repeat 50% 50%;
+    background-size: cover;
+    transform: translate(-50%, -50%); }
+  .left-col .data {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
 
 .right-col {
   left: 50%; }
+  .right-col .upper {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background: #ccc; }
+  .right-col .bottom {
+    position: absolute;
+    top: 50%;
+    height: 50vh;
+    width: 100%;
+    background: url() no-repeat 50% 50%;
+    background-size: cover; }
 
 /*# sourceMappingURL=charlotte.css.map */
