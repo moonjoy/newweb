@@ -621,5 +621,25 @@ textarea:focus {
     padding-top: 50px;
     width: 96%;
     margin: 0 auto; } }
+.web-project1 {
+  background: url(../../images/mfadt/mfadt.png) no-repeat 50% 50%;
+  background-size: 100%; }
+  .web-project1::after {
+    content: "prism";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 72%;
+    left: 96%;
+    right: 0;
+    bottom: 0; }
+
+.web-one:hover {
+  cursor: pointer; }
+  .web-one:hover .web-project1 {
+    background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+    background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */

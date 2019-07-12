@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: Helvetica; }
+
+.left-col, .right-col {
+  position: absolute;
+  width: 50%;
+  height: 100vh; }
+
+.left-col {
+  background: #d45b48; }
+
+.right-col {
+  left: 50%; }
+
+/*# sourceMappingURL=charlotte.css.map */
