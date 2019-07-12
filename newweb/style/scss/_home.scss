@@ -358,11 +358,11 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-            &:hover {
-              background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
-              cursor: pointer;
-              background-size: cover;
-            }
+            // &:hover {
+            //   background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
+            //   cursor: pointer;
+            //   background-size: cover;
+            // }
 
         }
 
@@ -382,10 +382,10 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-            &:hover {
-              background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%;
-              cursor: pointer;
-            }
+            // &:hover {
+            //   background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%;
+            //   cursor: pointer;
+            // }
         }
 
 
@@ -406,11 +406,11 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-             &:hover {
-              background: url(../../images/mfadt/mfadt.gif) no-repeat 50% 50%;
-              cursor: pointer;
-              background-size: 100%;
-            }
+            //  &:hover {
+            //   background: url(../../images/mfadt/mfadt.gif) no-repeat 50% 50%;
+            //   cursor: pointer;
+            //   background-size: 100%;
+            // }
 
             &.project-web-3 {
               &::after{
@@ -437,13 +437,44 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-            &:hover {
-              background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
-              cursor: pointer;
-              background-size: cover;
-            }
+            // &:hover {
+            //   background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
+            //   cursor: pointer;
+            //   background-size: cover;
+            // }
         }
 
+}
+
+.project-one:hover {
+    cursor: pointer;
+    .project1{
+      background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
+      background-size: cover;
+    }
+}
+
+.project-two:hover {
+    cursor: pointer;
+    .project2{  
+      background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%;
+    }
+}
+
+.project-three:hover {
+    cursor: pointer;
+    .project3{
+      background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+}
+
+.project-four:hover {
+    cursor: pointer;
+    .project4{
+      background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
+      background-size: cover;
+    }
 }
 
 

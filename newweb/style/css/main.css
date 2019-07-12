@@ -270,10 +270,6 @@ h6 {
       left: 88%;
       right: 0;
       bottom: 0; }
-    .project.project1:hover {
-      background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
-      cursor: pointer;
-      background-size: cover; }
   .project.project2 {
     background: url(../../images/magikku/magikku.jpg) no-repeat 80% 50%; }
     .project.project2::after {
@@ -287,9 +283,6 @@ h6 {
       left: -15%;
       right: 0;
       bottom: 0; }
-    .project.project2:hover {
-      background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%;
-      cursor: pointer; }
   .project.project3 {
     background: url(../../images/mfadt/mfadt.png) no-repeat 50% 50%;
     background-size: 100%; }
@@ -304,10 +297,6 @@ h6 {
       left: 96%;
       right: 0;
       bottom: 0; }
-    .project.project3:hover {
-      background: url(../../images/mfadt/mfadt.gif) no-repeat 50% 50%;
-      cursor: pointer;
-      background-size: 100%; }
     .project.project3.project-web-3::after {
       content: none; }
   .project.project4 {
@@ -324,10 +313,29 @@ h6 {
       left: -26%;
       right: 0;
       bottom: 0; }
-    .project.project4:hover {
-      background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
-      cursor: pointer;
-      background-size: cover; }
+
+.project-one:hover {
+  cursor: pointer; }
+  .project-one:hover .project1 {
+    background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
+    background-size: cover; }
+
+.project-two:hover {
+  cursor: pointer; }
+  .project-two:hover .project2 {
+    background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%; }
+
+.project-three:hover {
+  cursor: pointer; }
+  .project-three:hover .project3 {
+    background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+    background-size: 100%; }
+
+.project-four:hover {
+  cursor: pointer; }
+  .project-four:hover .project4 {
+    background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
+    background-size: cover; }
 
 .project-one:hover .project-des1::after {
   content: "Official Selection for #WeAreHereFest Film Festival at the Abrons Art Center in NYC on Sept 5th to Sept 7th, 2019. \A \A Chagu Bakha is an animated short film about a Deity from the ancient folklore in the Newar culture in Nepal. I explore digital storytelling with the memories of my hometown and my childhood within the Newari culture.";
