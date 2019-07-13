@@ -47,11 +47,11 @@ html, body {
     text-transform: uppercase; }
   .left-col .cover {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 48%;
+    left: 52%;
     width: 45%;
     height: 50%;
-    background: url() no-repeat 50% 50%;
+    background: url(../../pages/web/charlotte/charlotte.jpg) no-repeat 50% 50%;
     background-size: cover;
     transform: translate(-50%, -50%); }
   .left-col .data {
@@ -61,7 +61,8 @@ html, body {
     transform: translate(-50%, -50%);
     color: #000;
     text-transform: uppercase;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    z-index: 9; }
     .left-col .data #name {
       font-weight: bolder; }
     .left-col .data #artist {
@@ -109,7 +110,7 @@ html, body {
     top: 50%;
     height: 50vh;
     width: 100%;
-    background: url() no-repeat 50% 50%;
+    background: url(../../web/charlotte/charlotte.jpg) no-repeat 50% 50%;
     background-size: cover; }
     .right-col .bottom .next {
       position: absolute;
@@ -133,10 +134,10 @@ html, body {
 
 .block-cover {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 23%;
+  left: 27%;
   transform: translate -50%, -50%;
-  width: 45%;
+  width: 49%;
   height: 50%; }
   .block-cover::after {
     content: '';
