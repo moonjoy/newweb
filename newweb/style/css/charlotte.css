@@ -8,7 +8,6 @@ html, body {
 
 .left-col, .right-col {
   position: absolute;
-  width: 50%;
   height: 100vh;
   font-family: 'Poppins', sans-serif; }
 
@@ -21,10 +20,14 @@ html, body {
   opacity: 0.6;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 1.8em 2em; }
+  padding: 1.7em 2em; }
+
+.next ion-icon {
+  padding: 2em; }
 
 .left-col {
-  background: #d45b48; }
+  background: #c08c44;
+  width: 55%; }
   .left-col .logo {
     color: #fff;
     position: fixed;
@@ -48,9 +51,9 @@ html, body {
   .left-col .cover {
     position: absolute;
     top: 48%;
-    left: 52%;
-    width: 45%;
-    height: 50%;
+    left: 50.8%;
+    width: 48.5%;
+    height: 58%;
     background: url(../../pages/web/charlotte/charlotte.jpg) no-repeat 50% 50%;
     background-size: cover;
     transform: translate(-50%, -50%); }
@@ -69,7 +72,8 @@ html, body {
       font-size: 10px; }
 
 .right-col {
-  left: 50%; }
+  left: 55%;
+  width: 45%; }
   .right-col .upper {
     position: absolute;
     width: 100%;
@@ -109,9 +113,10 @@ html, body {
     position: absolute;
     top: 50%;
     height: 50vh;
-    width: 100%;
-    background: url(../../web/charlotte/charlotte.jpg) no-repeat 50% 50%;
-    background-size: cover; }
+    width: 150%;
+    background: url(../../pages/web/charlotte/cardin.jpg) no-repeat 50% 64%;
+    background-size: cover;
+    filter: grayscale(60%); }
     .right-col .bottom .next {
       position: absolute;
       top: 24%;
@@ -134,11 +139,11 @@ html, body {
 
 .block-cover {
   position: absolute;
-  top: 23%;
-  left: 27%;
+  top: 19%;
+  left: 26.6%;
   transform: translate -50%, -50%;
-  width: 49%;
-  height: 50%; }
+  width: 48.4%;
+  height: 58%; }
   .block-cover::after {
     content: '';
     top: 0;
@@ -148,7 +153,55 @@ html, body {
     height: 100%;
     background: #00f0b5;
     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 1s; }
+    animation-delay: 2s; }
+
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%; }
+  50% {
+    left: 0;
+    width: 100%; }
+  100% {
+    left: 100%;
+    width: 0%; } }
+@keyframes appear-text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.upper-block {
+  position: absolute;
+  width: 100%;
+  height: 50vh; }
+
+.upper-block::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #9a8b78;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2.4s; }
+
+.block-bottom {
+  position: absolute;
+  top: 50%;
+  height: 50vh;
+  width: 100%; }
+
+.block-bottom::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #000;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 3.6s; }
 
 @media (max-width: 900px) {
   .left-col {
