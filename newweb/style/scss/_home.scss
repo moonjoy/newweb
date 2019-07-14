@@ -358,11 +358,11 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-            &:hover {
-              background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
-              cursor: pointer;
-              background-size: cover;
-            }
+            // &:hover {
+            //   background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
+            //   cursor: pointer;
+            //   background-size: cover;
+            // }
 
         }
 
@@ -382,10 +382,10 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-            &:hover {
-              background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%;
-              cursor: pointer;
-            }
+            // &:hover {
+            //   background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%;
+            //   cursor: pointer;
+            // }
         }
 
 
@@ -406,11 +406,11 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-             &:hover {
-              background: url(../../images/mfadt/mfadt.gif) no-repeat 50% 50%;
-              cursor: pointer;
-              background-size: 100%;
-            }
+            //  &:hover {
+            //   background: url(../../images/mfadt/mfadt.gif) no-repeat 50% 50%;
+            //   cursor: pointer;
+            //   background-size: 100%;
+            // }
 
             &.project-web-3 {
               &::after{
@@ -437,13 +437,44 @@ h6 {
                   right: 0;
                   bottom: 0;
             }
-            &:hover {
-              background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
-              cursor: pointer;
-              background-size: cover;
-            }
+            // &:hover {
+            //   background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
+            //   cursor: pointer;
+            //   background-size: cover;
+            // }
         }
 
+}
+
+.project-one:hover {
+    cursor: pointer;
+    .project1{
+      background: url(../../images/chapubakha/chapubakha.gif) no-repeat 40% 50%;
+      background-size: cover;
+    }
+}
+
+.project-two:hover {
+    cursor: pointer;
+    .project2{  
+      background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%;
+    }
+}
+
+.project-three:hover {
+    cursor: pointer;
+    .project3{
+      background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+}
+
+.project-four:hover {
+    cursor: pointer;
+    .project4{
+      background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
+      background-size: cover;
+    }
 }
 
 
@@ -451,7 +482,7 @@ h6 {
 
   .project-one:hover .project-des1 {
     &::after{
-      content: "Official Selection for #WeAreHereFest Film Festival at the Abrons Art Center in NYC on Sept 5th to Sept 7th, 2019. \A \A Chagu Bakha is an animated short film about a Deity from the ancient folklore in the Newar culture in Nepal. I explore digital storytelling with the memories of my hometown and my childhood within the Newari culture.";
+      content: "Official Selection for #WeAreHereFest Film Festival at the Abrons Art Center in NYC on Sept 5th to Sept 7th, 2019. \A \A Chagu Bakha is an animated short film about a Deity from an ancient folklore in the Newar culture in Nepal. I explore digital storytelling with the memories of my hometown, Kathmandu and my childhood within the Newari culture.";
       white-space: pre-wrap;
       font-size: 15px;
       position: relative;
@@ -780,7 +811,7 @@ textarea:focus {
         }
     }
     &:hover{
-      background: #ffffff05;
+      background: #ffffff12;
     }
   }
 }
