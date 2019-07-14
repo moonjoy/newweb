@@ -25,12 +25,14 @@ html, body {
 .next ion-icon {
   padding: 2em; }
 
+a:hover {
+  cursor: pointer; }
+
 .left-col {
   background: #c08c44;
   width: 55%; }
   .left-col .logo {
     color: #fff;
-    position: fixed;
     margin: 1em;
     font-weight: bolder;
     z-index: 1; }
@@ -56,7 +58,10 @@ html, body {
     height: 58%;
     background: url(../../pages/web/charlotte/charlotte.jpg) no-repeat 50% 50%;
     background-size: cover;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 2.6s; }
   .left-col .data {
     position: absolute;
     top: 36%;
@@ -78,7 +83,10 @@ html, body {
     position: absolute;
     width: 100%;
     height: 50vh;
-    background: #ccc; }
+    background: #8b5d5a;
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 3s; }
     .right-col .upper .about {
       position: absolute;
       top: 40%;
@@ -101,7 +109,7 @@ html, body {
         .right-col .upper .about .media ul {
           position: absolute;
           list-style: none;
-          left: -24%; }
+          left: -20%; }
           .right-col .upper .about .media ul li {
             display: inline-block;
             color: #ccc;
@@ -116,15 +124,18 @@ html, body {
     width: 150%;
     background: url(../../pages/web/charlotte/cardin.jpg) no-repeat 50% 64%;
     background-size: cover;
-    filter: grayscale(60%); }
+    filter: grayscale(60%);
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 4.2s; }
     .right-col .bottom .next {
       position: absolute;
-      top: 24%;
-      left: 16%; }
+      top: 28%;
+      left: 11%; }
     .right-col .bottom .data2 {
       position: absolute;
-      top: 12%;
-      left: 28%;
+      top: 15%;
+      left: 19%;
       color: #ccc;
       text-transform: uppercase;
       letter-spacing: 4px; }
@@ -149,11 +160,43 @@ html, body {
     top: 0;
     left: 0;
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 100%;
-    background: #00f0b5;
+    background: #c2c3bc;
     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 2s; }
+
+.upper-block {
+  position: absolute;
+  width: 100%;
+  height: 50vh; }
+
+.upper-block::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #cf8680;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2.4s; }
+
+.block-bottom {
+  position: absolute;
+  top: 50%;
+  height: 50vh;
+  width: 100%; }
+  .block-bottom::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #343335;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 3.6s; }
 
 @keyframes rev-block {
   0% {
@@ -170,39 +213,6 @@ html, body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-.upper-block {
-  position: absolute;
-  width: 100%;
-  height: 50vh; }
-
-.upper-block::after {
-  content: '';
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  background: #9a8b78;
-  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  animation-delay: 2.4s; }
-
-.block-bottom {
-  position: absolute;
-  top: 50%;
-  height: 50vh;
-  width: 100%; }
-
-.block-bottom::after {
-  content: '';
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  background: #000;
-  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  animation-delay: 3.6s; }
-
 @media (max-width: 900px) {
   .left-col {
     width: 100%; }
