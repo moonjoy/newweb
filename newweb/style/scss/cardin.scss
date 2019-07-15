@@ -28,7 +28,7 @@ html, body {
     background: red;
 }
 
-ion-icon {
+.play, .next ion-icon {
     color: #fff;
     opacity: 0.6;
     border-radius: 50%;
@@ -44,12 +44,17 @@ ion-icon {
             display: inline-block;
             font-weight: bolder;
             text-transform: uppercase;
+            letter-spacing: 1.5px;
         }
 
         .concert {
             display: inline-block;
             float: right;
             text-transform: uppercase;
+            font-weight: 100;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            color: #feeacf;
         }
     }
 
@@ -91,6 +96,8 @@ ion-icon {
     .release-date {
         position: absolute;
         bottom: 7%;
+        color: #fcdeb5;
+        letter-spacing: 1.5px;
 
         p{
             transform: rotate(-90deg);
@@ -100,7 +107,40 @@ ion-icon {
 
 .right-col {
     .upper {
+        padding: 4% 6%;
+        color: #ccc;
+        text-transform: uppercase;
+            .about {
+                padding-top: 30px;
+                padding-left: 15px;
 
+                h1 {
+                font-weight: bolder;
+                margin-bottom: 20px;
+                }
+
+                p {
+                    letter-spacing: 4px;
+                    font-size: 10px;
+                    margin-bottom: 10px;
+
+                }
+
+                .media-share {
+                    margin-top: 50px;
+                }
+
+                .media {
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        li {
+                            display: inline-block;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
     }
 
     .bottom {
