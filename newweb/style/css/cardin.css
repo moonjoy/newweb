@@ -52,7 +52,10 @@ html, body {
       background-size: cover;
       width: 400px;
       height: 470px;
-      display: inline-block; }
+      display: inline-block;
+      opacity: 0;
+      animation: appear-text 0.0001s linear forwards;
+      animation-delay: 2.6s; }
       .left-col .cover-container .cover .play {
         position: absolute;
         top: 50%;
@@ -82,7 +85,10 @@ html, body {
 
 .right-col .upper {
   color: #f3dad8;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 1.7s; }
   .right-col .upper .about {
     padding-top: 30px;
     padding-left: 15px; }
@@ -101,6 +107,16 @@ html, body {
       .right-col .upper .about .media ul li {
         display: inline-block;
         padding-right: 10px; }
+  .right-col .upper::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s; }
 .right-col .bottom {
   width: 150%;
   background: url(../../pages/web/cardin/cardin.jpg) no-repeat 50% 64%;
@@ -130,6 +146,11 @@ html, body {
   100% {
     left: 100%;
     width: 0%; } }
+@keyframes appear-text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @media (max-width: 900px) {
   html, body {
     overflow-y: scroll; }

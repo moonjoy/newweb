@@ -68,6 +68,9 @@ html, body {
                 width: 400px;
                 height: 470px;
                 display: inline-block;
+                opacity: 0;
+                animation: appear-text 0.0001s linear forwards;
+                animation-delay: 2.6s;
                 .play {
                     position: absolute;
                     top: 50%;
@@ -113,6 +116,9 @@ html, body {
     .upper {
         color: #f3dad8;
         text-transform: uppercase;
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.7s;
             .about {
                 padding-top: 30px;
                 padding-left: 15px;
@@ -143,6 +149,18 @@ html, body {
                         }
                     }
                 }
+            }
+
+            &::after {
+                 content: '';
+                 top: 0;
+                 left: 0;
+                 position: absolute;
+                 width: 0%;
+                 height: 100%;
+                 background: #fff;
+                 animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+                 animation-delay: 1s;
             }
     }
 
@@ -189,6 +207,17 @@ html, body {
      100% {
           left: 100%;
           width: 0%;
+     }
+
+}
+
+@keyframes appear-text {
+
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
      }
 
 }
