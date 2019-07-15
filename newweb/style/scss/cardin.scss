@@ -63,7 +63,7 @@ html, body {
         padding: 8% 2% 7% 2%;
         position: relative;
             .cover {
-                background: url(../../pages/web/charlotte/charlotte.jpg) no-repeat 50% 50%;
+                background: url(../../pages/web/cardin/charlotte.jpg) no-repeat 50% 50%;
                 background-size: cover;
                 width: 400px;
                 height: 470px;
@@ -105,10 +105,13 @@ html, body {
     }
 }
 
+.upper, .bottom {
+    padding: 4% 6%;
+}
+
 .right-col {
     .upper {
-        padding: 4% 6%;
-        color: #ccc;
+        color: #f3dad8;
         text-transform: uppercase;
             .about {
                 padding-top: 30px;
@@ -144,6 +147,28 @@ html, body {
     }
 
     .bottom {
+        width: 150%;
+        background: url(../../pages/web/cardin/cardin.jpg) no-repeat 50% 64%;
+        background-size: cover;
+        filter: grayscale(60%);
+        .next {
+            margin: 2%;
+        }
+
+        .data2 {
+            padding: 3.5%;
+            color: #f3dad8;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 14px;
+        }
+
+        .more {
+            width: 100%;
+            margin: 18% 4%;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+        }
 
     }
 }
