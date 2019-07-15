@@ -3,15 +3,99 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
-.wrapper {
-  height: 100vh; }
+.wrapper .left-col, .wrapper .right-col {
+  height: 100vh !important;
+  font-family: 'Poppins', sans-serif;
+  color: #fff; }
 
 .upper {
-  height: 50vh; }
+  height: 50vh;
+  background: #8b5d5a; }
 
 .bottom {
-  height: 50vh; }
+  height: 50vh;
+  background: red; }
+
+ion-icon {
+  color: #fff;
+  opacity: 0.6;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2em; }
+
+.left-col {
+  background: #c08c44;
+  padding: 1% 2% !important; }
+  .left-col .left-top .logo {
+    display: inline-block;
+    font-weight: bolder;
+    text-transform: uppercase; }
+  .left-col .left-top .concert {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase; }
+  .left-col .cover-container {
+    text-align: center;
+    padding: 8% 2% 7% 2%;
+    position: relative; }
+    .left-col .cover-container .cover {
+      background: url(../../pages/web/charlotte/charlotte.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      width: 400px;
+      height: 470px;
+      display: inline-block; }
+      .left-col .cover-container .cover .play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .left-col .cover-container .album {
+      position: absolute;
+      top: 30%;
+      left: 22%;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: bolder;
+      text-align: left; }
+      .left-col .cover-container .album .album-artist {
+        font-size: 10px;
+        font-weight: normal; }
+  .left-col .release-date {
+    position: absolute;
+    bottom: 7%; }
+    .left-col .release-date p {
+      transform: rotate(-90deg); }
+
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%; }
+  50% {
+    left: 0;
+    width: 100%; }
+  100% {
+    left: 100%;
+    width: 0%; } }
+@media (max-width: 900px) {
+  html, body {
+    overflow-y: scroll; }
+
+  .cover-container {
+    padding-top: 15% !important; }
+
+  .left-top {
+    padding: 1% 4% !important; }
+
+  .cover {
+    width: 350px !important;
+    height: 420px !important; }
+
+  .album {
+    top: 30% !important;
+    left: 9% !important; } }
 
 /*# sourceMappingURL=cardin.css.map */
