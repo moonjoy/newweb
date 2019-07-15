@@ -13,6 +13,7 @@
 
           <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -22,13 +23,13 @@
                 <div class="col-lg-7 col-md-7 col-sm-12 col-12 left-col">
 
                     <div class="left-top">
-                      <div class="logo"><p>Charlotte</p></div>
-                      <div class="concert"><p>Concerts</p></div>
+                      <div class="logo"><p><a href="https://www.charlottecardin.com/" target="_blank">Charlotte</a></p></div>
+                      <div class="concert"><p><a href="https://www.bandsintown.com/e/1014361682?app_id=WIX-10148052&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event" target="_blank">Concerts</a></p></div>
                     </div>
 
                     <div class="cover-container">
                       <div class="cover">
-                          <div class="play"><ion-icon name="play"></ion-icon></div>
+
                       </div>
 
                       <div class="album">
@@ -59,25 +60,26 @@
 
                               <h1>Songs</h1>
                               <div class="album-song1">
-                              <p><ion-icon name="musical-notes"></ion-icon> &nbsp;<span>Big Boy</span></p>
+                              <p><ion-icon name="musical-notes"></ion-icon> &nbsp;<span><a href="https://www.youtube.com/watch?v=8DboauquUv8" target="_blank">Big Boy</a></span></p>
                               </div>
 
                               <div class="album-song2">
-                              <p><ion-icon name="musical-notes"></ion-icon>  &nbsp;<span>Like It Doesn't Hurt</span></p>
+                              <p><ion-icon name="musical-notes"></ion-icon>  &nbsp;<span><a href="https://www.youtube.com/watch?v=OOzetKrKrrA" target="_blank">Like It Doesn't Hurt</a></span></p>
                               </div>
 
                               <div class="album-song3">
-                              <p><ion-icon name="musical-notes"></ion-icon>  &nbsp;<span>Dirty Dirty</span></p>
+                              <p><ion-icon name="musical-notes"></ion-icon>  &nbsp;<span><a href="https://www.youtube.com/watch?v=RZDG3BoNKWY" target="_blank">Dirty Dirty</a></span></p>
                               </div>
 
 
-                              <p class="media-share">Share now : </p>
+                              <p class="media-share">Follow : </p>
 
                               <div class="media">
                                     <ul>
-                                          <li><ion-icon name="logo-facebook"></ion-icon></li>
-                                          <li><ion-icon name="logo-instagram"></ion-icon></li>
-                                          <li><ion-icon name="logo-twitter"></ion-icon></li>
+                                          <li><a href="https://www.facebook.com/charlottecardinofficial/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                          <li><a href="https://www.instagram.com/charlottecardin/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                          <li><a href="https://twitter.com/Charlottecardin" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                          <li><a href="https://www.youtube.com/channel/UCIEcq0eG63LS-4J9M1qNj9Q" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
                                     </ul>
                               </div>
 
@@ -88,14 +90,14 @@
 
                     <div class="row bottom">
                         <div class="next">
-                              <ion-icon name="fastforward"></ion-icon>
+                              <a href="https://www.youtube.com/watch?v=Wlkma-EPlpU" target="_blank"><ion-icon name="fastforward"></ion-icon></a>
                         </div>
 
                         <div class="data2">
 
-                              <div class="album-name3"><p id="name">Talk Talk</p></div>
+                              <div class="album-name3"><p id="name"><a href="https://www.youtube.com/watch?v=Wlkma-EPlpU" target="_blank">Talk Talk</a></p></div>
 
-                              <div class="album-artist3"><p id="artist">Charlotte Cardin</p></div>
+                              <div class="album-artist3"><p id="artist"><a href="https://www.charlottecardin.com/" target="_blank">Charlotte Cardin</a></p></div>
 
                         </div>
 
@@ -212,6 +214,21 @@
             opacity: 0,
             ease: Expo.easeInOut
       })
+
+      </script>
+
+
+      <script type="text/javascript">
+
+        $(document).ready(function(){
+            window.setTimeout(function(){
+              var $removeblocks = $(".left-cover, .block-cover, .upper-block, .bottom-block");
+
+              $removeblocks.css({
+                display: "none"
+              });
+            },5000);
+        });
       </script>
 
 

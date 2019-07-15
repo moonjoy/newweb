@@ -9,6 +9,15 @@ html, body {
     overflow-y: hidden;
 }
 
+a {
+    color: #f3dad8 !important;
+    &:hover {
+        cursor: pointer;
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+}
+
 .wrapper {
     .left-col, .right-col {
         height: 100vh !important;
@@ -49,6 +58,9 @@ html, body {
             font-weight: bolder;
             text-transform: uppercase;
             letter-spacing: 1.5px;
+            a {
+                color: #fff !important;
+            }
         }
 
         .concert {
@@ -115,7 +127,7 @@ html, body {
 .left-cover {
     position: absolute;
     transform: translate (-50%, -50%);
-    width: 59.6%;
+    width: 60%;
     height: 100%;
 
     &::after {
@@ -128,6 +140,7 @@ html, body {
         background: #fff;
         animation: rev-block 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         animation-delay: 1s;
+        clear: both;
     }
 }
 
@@ -149,6 +162,7 @@ html, body {
         background: #c2c3bc;
         animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         animation-delay: 2s;
+        clear: both;
     }
 }
 
@@ -244,6 +258,7 @@ html, body {
          background: #c48a86;
          animation: rev-block 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
          animation-delay: 2.2s;
+         clear: both;
     }
 }
 
@@ -265,6 +280,7 @@ html, body {
          background: #333335;
          animation: rev-block 2.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
          animation-delay: 2.6s;
+         clear: both;
     }
 }
 
@@ -305,7 +321,7 @@ html, body {
     }
 
     .left-cover {
-        height: 0;
+        width: 110%;
     }
 
     .cover-container {
