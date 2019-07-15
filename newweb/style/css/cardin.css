@@ -162,7 +162,7 @@ a {
   filter: grayscale(60%);
   opacity: 0;
   animation: appear-text 0.0001s linear forwards;
-  animation-delay: 2.8s; }
+  animation-delay: 2.9s; }
   .right-col .bottom .next {
     margin: 2%; }
   .right-col .bottom .data2 {
@@ -211,8 +211,8 @@ a {
     width: 0%;
     height: 100%;
     background: #333335;
-    animation: rev-block 2.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 2.6s;
+    animation: rev-block 2.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 2.4s;
     clear: both; }
 
 @keyframes rev-block {
