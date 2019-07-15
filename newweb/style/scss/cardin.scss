@@ -39,6 +39,10 @@ html, body {
 .left-col {
     background: #c08c44;
     padding: 1% 2% !important;
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 1.5s;
+
     .left-top{
         .logo {
             display: inline-block;
@@ -108,6 +112,46 @@ html, body {
     }
 }
 
+.left-cover {
+    position: absolute;
+    transform: translate (-50%, -50%);
+    width: 59.6%;
+    height: 100%;
+
+    &::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: #fff;
+        animation: rev-block 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+    }
+}
+
+.block-cover {
+    position: absolute;
+    top: 16.6%;
+    left: 26.7%;
+    transform: translate (-50%, -50%);
+    width: 46.7%;
+    height: 65.5%;
+
+    &::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: #c2c3bc;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 2s;
+    }
+}
+
 .upper, .bottom {
     padding: 4% 6%;
 }
@@ -118,7 +162,7 @@ html, body {
         text-transform: uppercase;
         opacity: 0;
         animation: appear-text 0.0001s linear forwards;
-        animation-delay: 1.7s;
+        animation-delay: 2.4s;
             .about {
                 padding-top: 30px;
                 padding-left: 15px;
@@ -150,18 +194,6 @@ html, body {
                     }
                 }
             }
-
-            &::after {
-                 content: '';
-                 top: 0;
-                 left: 0;
-                 position: absolute;
-                 width: 0%;
-                 height: 100%;
-                 background: #fff;
-                 animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-                 animation-delay: 1s;
-            }
     }
 
     .bottom {
@@ -169,6 +201,9 @@ html, body {
         background: url(../../pages/web/cardin/cardin.jpg) no-repeat 50% 64%;
         background-size: cover;
         filter: grayscale(60%);
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 2.8s;
         .next {
             margin: 2%;
         }
@@ -191,6 +226,47 @@ html, body {
     }
 }
 
+
+.upper-block {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate (-50%, -50%);
+    width: 100%;
+    height: 50%;
+        &::after {
+         content: '';
+         top: 0;
+         left: 0;
+         position: absolute;
+         width: 0%;
+         height: 100%;
+         background: #c48a86;
+         animation: rev-block 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+         animation-delay: 2.2s;
+    }
+}
+
+
+.bottom-block {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate (-50%, -50%);
+    width: 100%;
+    height: 50%;
+        &::after {
+         content: '';
+         top: 0;
+         left: 0;
+         position: absolute;
+         width: 0%;
+         height: 100%;
+         background: #333335;
+         animation: rev-block 2.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+         animation-delay: 2.6s;
+    }
+}
 
 
 
@@ -225,7 +301,11 @@ html, body {
 
 @media(max-width: 900px) {
     html, body {
-        overflow-y: scroll;
+        overflow-y: scroll !important;
+    }
+
+    .left-cover {
+        height: 0;
     }
 
     .cover-container {
@@ -238,12 +318,28 @@ html, body {
 
     .cover {
         width: 350px !important;
-        height: 420px !important;
+        height: 470px !important;
     }
 
     .album {
         top: 30% !important;
         left: 9% !important;
+    }
+
+    .more {
+        margin: 6% 4% 1% 3% !important;
+    }
+
+    .left-col {
+        animation-delay: 1s;
+        }
+
+    .block-cover {
+        top: 18.37%;
+        left: 17%;
+        transform: translate (-50%, -50%);
+        width: 66%;
+        height: 65.5%;
     }
 }
 
