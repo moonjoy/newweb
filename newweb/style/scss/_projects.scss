@@ -23,3 +23,32 @@
       background-size: 100%;
     }
 }
+
+
+
+.web-project2 {
+    background: url(../../images/web/cardin/cardin.png) no-repeat 50% 50%;
+    background-size: 100%;
+
+    &::after {
+        content: "album template";
+        font-family: "Roboto Mono";
+        font-size: 36px;
+        position: relative;
+        color: #fff;
+        display: block;
+        top: 48%;
+        left: -27%;
+        right: 0;
+        bottom: 0;
+  }
+}
+
+.web-two:hover {
+    cursor: pointer;
+    .web-project2{
+      background: url(../../images/web/cardin/cardin.gif) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+}
+

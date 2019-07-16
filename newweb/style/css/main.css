@@ -39,7 +39,7 @@ a {
   from {
     width: 0; }
   to {
-    width: 18em; } }
+    width: 9em; } }
 @media (max-width: 768px) {
   .whitespace {
     display: none; }
@@ -48,7 +48,7 @@ a {
     from {
       width: 0; }
     to {
-      width: 17em; } } }
+      width: 9em; } } }
 @keyframes blinkTextCussor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75); }
@@ -640,6 +640,27 @@ textarea:focus {
   cursor: pointer; }
   .web-one:hover .web-project1 {
     background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+    background-size: 100%; }
+
+.web-project2 {
+  background: url(../../images/web/cardin/cardin.png) no-repeat 50% 50%;
+  background-size: 100%; }
+  .web-project2::after {
+    content: "album template";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 48%;
+    left: -27%;
+    right: 0;
+    bottom: 0; }
+
+.web-two:hover {
+  cursor: pointer; }
+  .web-two:hover .web-project2 {
+    background: url(../../images/web/cardin/cardin.gif) no-repeat 50% 50%;
     background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */
