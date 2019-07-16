@@ -21,6 +21,11 @@ a {
     color: #ccc !important;
     text-decoration: none !important; }
 
+.link-ba {
+  color: grey !important; }
+  .link-ba:hover {
+    color: #fff; }
+
 /*--------------- typewriter effect --------------- */
 .line {
   width: 24em;
@@ -597,12 +602,19 @@ textarea:focus {
 
 .prev, .next p {
   color: grey; }
+  .prev:hover, .next p:hover {
+    color: #fff; }
 
 .prev p {
   text-align: left; }
 
 .next p {
   text-align: right; }
+
+.active {
+  background: #2f2f2f;
+  padding: 3px 6px;
+  border-radius: 4px; }
 
 /*--------------- work page --------------- */
 .hero-content {

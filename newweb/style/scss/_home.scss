@@ -27,6 +27,13 @@ a {
   }
 }
 
+.link-ba {
+  color: grey !important;
+    &:hover {
+      color: #fff;
+    }
+}
+
 
 /*--------------- typewriter effect --------------- */
 .line {
@@ -818,6 +825,9 @@ textarea:focus {
 
 .prev, .next p {
       color: grey;
+      &:hover {
+        color: #fff;
+      }
 }
 
 .prev p {
@@ -826,4 +836,11 @@ textarea:focus {
 
 .next p {
       text-align: right;
+}
+
+
+.active {
+    background: #2f2f2f;
+    padding: 3px 6px;
+    border-radius: 4px;
 }
