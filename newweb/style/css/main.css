@@ -33,7 +33,7 @@ a {
   transform: translateY(-50%); }
 
 .anim-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal; }
+  animation: typewriter 2.5s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal; }
 
 @keyframes typewriter {
   from {
