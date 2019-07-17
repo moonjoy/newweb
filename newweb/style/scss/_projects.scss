@@ -1,5 +1,7 @@
+
+// web projects
 .web-project1 {
-    background: url(../../images/mfadt/mfadt.jpg) no-repeat 50% 50%;
+    background: url(../../images/web/mfadt/mfadt.jpg) no-repeat 50% 50%;
     background-size: 100%;
 
     &::after {
@@ -19,7 +21,7 @@
 .web-one:hover {
     cursor: pointer;
     .web-project1{
-      background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+      background: url(../../images/web/mfadt/prism.gif) no-repeat 50% 50%;
       background-size: 100%;
     }
 }
@@ -48,6 +50,61 @@
     cursor: pointer;
     .web-project2{
       background: url(../../images/web/cardin/cardin.gif) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+}
+
+// VR projects
+
+.vr-project1 {
+    background: url(../../images/vr/magikku/magikku.jpg) no-repeat 50% 50%;
+    background-size: 100%;
+
+    &::after {
+        content: "magikku";
+        font-family: "Roboto Mono";
+        font-size: 36px;
+        position: relative;
+        color: #fff;
+        display: block;
+        top: 72%;
+        left: 96%;
+        right: 0;
+        bottom: 0;
+  }
+}
+
+.vr-one:hover {
+    cursor: pointer;
+    .vr-project1{
+      background: url(../../images/vr/magikku/magikku.gif) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+}
+
+
+.vr-project2 {
+    background: url(../../images/vr/mythicalland/mythicalland.png) no-repeat 50% 50%;
+    background-size: 100%;
+
+    &::after {
+        content: "mythical land";
+        font-family: "Roboto Mono";
+        font-size: 36px;
+        position: relative;
+        color: #fff;
+        display: block;
+        top: 48%;
+        left: -27%;
+        right: 0;
+        bottom: 0;
+  }
+}
+
+.vr-two:hover {
+    cursor: pointer;
+    .vr-project2{
+      background: url(../../images/vr/mythicalland/mythicalland.gif) no-repeat 50% 50%;
       background-size: 100%;
     }
 }

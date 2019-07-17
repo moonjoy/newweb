@@ -262,7 +262,7 @@ h6 {
 .project {
   height: 500px; }
   .project.project1 {
-    background: url(../../images/chapubakha/chapubakha.jpg) no-repeat 31% 50%;
+    background: url(../../images/motion/chapubakha/chapubakha.jpg) no-repeat 31% 50%;
     background-size: cover; }
     .project.project1::after {
       content: "chagu bakha";
@@ -276,7 +276,7 @@ h6 {
       right: 0;
       bottom: 0; }
   .project.project2 {
-    background: url(../../images/magikku/magikku.jpg) no-repeat 80% 50%; }
+    background: url(../../images/vr/magikku/magikku.jpg) no-repeat 80% 50%; }
     .project.project2::after {
       content: "magikku";
       font-family: "Roboto Mono";
@@ -289,7 +289,7 @@ h6 {
       right: 0;
       bottom: 0; }
   .project.project3 {
-    background: url(../../images/mfadt/mfadt.jpg) no-repeat 50% 50%;
+    background: url(../../images/web/mfadt/mfadt.jpg) no-repeat 50% 50%;
     background-size: 100%; }
     .project.project3::after {
       content: "prism";
@@ -305,7 +305,7 @@ h6 {
     .project.project3.project-web-3::after {
       content: none; }
   .project.project4 {
-    background: url(../../images/micdrop/micdrop.png) no-repeat 50% 50%;
+    background: url(../../images/motion/micdrop/micdrop.png) no-repeat 50% 50%;
     background-size: cover; }
     .project.project4::after {
       content: "micdrop";
@@ -322,24 +322,24 @@ h6 {
 .project-one:hover {
   cursor: pointer; }
   .project-one:hover .project1 {
-    background: url(../../images/chapubakha/chapubakha.gif) no-repeat 31% 50%;
+    background: url(../../images/motion/chapubakha/chapubakha.gif) no-repeat 31% 50%;
     background-size: cover; }
 
 .project-two:hover {
   cursor: pointer; }
   .project-two:hover .project2 {
-    background: url(../../images/magikku/magikku.gif) no-repeat 80% 50%; }
+    background: url(../../images/motion/magikku/magikku.gif) no-repeat 80% 50%; }
 
 .project-three:hover {
   cursor: pointer; }
   .project-three:hover .project3 {
-    background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+    background: url(../../images/web/mfadt/prism.gif) no-repeat 50% 50%;
     background-size: 100%; }
 
 .project-four:hover {
   cursor: pointer; }
   .project-four:hover .project4 {
-    background: url(../../images/micdrop/micdrop2.gif) no-repeat 50% 50%;
+    background: url(../../images/motion/micdrop/micdrop2.gif) no-repeat 50% 50%;
     background-size: cover; }
 
 .project-one:hover .project-des1::after {
@@ -612,9 +612,10 @@ textarea:focus {
   text-align: right; }
 
 .active {
-  background: #2f2f2f;
+  background: #dddddd;
   padding: 3px 6px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  color: #000 !important; }
 
 /*--------------- work page --------------- */
 .hero-content {
@@ -634,7 +635,7 @@ textarea:focus {
     width: 96%;
     margin: 0 auto; } }
 .web-project1 {
-  background: url(../../images/mfadt/mfadt.jpg) no-repeat 50% 50%;
+  background: url(../../images/web/mfadt/mfadt.jpg) no-repeat 50% 50%;
   background-size: 100%; }
   .web-project1::after {
     content: "prism";
@@ -651,7 +652,7 @@ textarea:focus {
 .web-one:hover {
   cursor: pointer; }
   .web-one:hover .web-project1 {
-    background: url(../../images/mfadt/prism.gif) no-repeat 50% 50%;
+    background: url(../../images/web/mfadt/prism.gif) no-repeat 50% 50%;
     background-size: 100%; }
 
 .web-project2 {
@@ -673,6 +674,48 @@ textarea:focus {
   cursor: pointer; }
   .web-two:hover .web-project2 {
     background: url(../../images/web/cardin/cardin.gif) no-repeat 50% 50%;
+    background-size: 100%; }
+
+.vr-project1 {
+  background: url(../../images/vr/magikku/magikku.jpg) no-repeat 50% 50%;
+  background-size: 100%; }
+  .vr-project1::after {
+    content: "magikku";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 72%;
+    left: 96%;
+    right: 0;
+    bottom: 0; }
+
+.vr-one:hover {
+  cursor: pointer; }
+  .vr-one:hover .vr-project1 {
+    background: url(../../images/vr/magikku/magikku.gif) no-repeat 50% 50%;
+    background-size: 100%; }
+
+.vr-project2 {
+  background: url(../../images/vr/mythicalland/mythicalland.png) no-repeat 50% 50%;
+  background-size: 100%; }
+  .vr-project2::after {
+    content: "mythical land";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 48%;
+    left: -27%;
+    right: 0;
+    bottom: 0; }
+
+.vr-two:hover {
+  cursor: pointer; }
+  .vr-two:hover .vr-project2 {
+    background: url(../../images/vr/mythicalland/mythicalland.gif) no-repeat 50% 50%;
     background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */
