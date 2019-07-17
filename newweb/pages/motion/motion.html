@@ -33,9 +33,9 @@
                   </span>
 
                    <ul id="menu" class="main-menu">
-                        <li><a href="../../pages/web/web.html" class="active">ui/ux</a></li>
+                        <li><a href="../../pages/web/web.html">ui/ux</a></li>
                         <li><a href="../../pages/vr/vr.html">vr</a></li>
-                        <li><a href="../../pages/motion/motion.html">motion</a></li>
+                        <li><a href="../../pages/motion/motion.html" class="active-link">motion</a></li>
 
                         <li class="main-menu-item">
                               <a href="#"><img src="../../images/selfportrait.png" class="about-image"></a>
@@ -57,9 +57,9 @@
                   <div class="close-btn">close</div>
 
                   <ul id="menu">
-                        <li><a href="../../pages/web/web.html" class="active">ui/ux</a></li>
+                        <li><a href="../../pages/web/web.html">ui/ux</a></li>
                         <li><a href="../../pages/vr/vr.html">vr</a></li>
-                        <li><a href="../../pages/motion/motion.html">motion</a></li>
+                        <li><a href="../../pages/motion/motion.html" class="active-link">motion</a></li>
                         <li><a href="../../pages/about/about.html">about me</a></li>
                         <li><a href="../../pages/contact/contact.html">contact</a></li>
                   </ul>
@@ -78,7 +78,7 @@
                               <div class="col-lg-8">
 
                                     <h3 class="wow fadeInUp" data-wow-delay="1s">Animation</h3><br>
-                                    <p class="wow fadeInUp" data-wow-delay="1.2s">This is animation description</p>
+                                    <p class="wow fadeInUp" data-wow-delay="1.2s">I love storytelling and seeing the stories come to life to share with the world.</p>
                               </div>
                         </div>
 
@@ -175,6 +175,7 @@
       <script type="text/javascript">
 
       // navigation starts here
+
       $("#toggle").click(function() {
             $(this).toggleClass('on');
             $("#resize").toggleClass("active");
@@ -191,6 +192,22 @@
       });
 
       // navigation ends here
+
+      $("ul.main-menu li.main-menu-item").click(function(e){
+            e.preventDefault();
+            if($(this).siblings("li").find("ul.submenu:visible").length){
+                  $("ul.submenu").slideup("normal");
+            }
+            $(this).find("ul.submenu").slideToggle("normal");
+      });
+
+      // submenu-item
+      $('.submenu-item').click(function(e){
+            e.preventDefault();
+             location.href = $(this).find('a').attr('href');
+      })
+
+
 
       // nav animation
 
@@ -210,7 +227,6 @@
       // nav animation ends
 
       new WOW().init();
-
 
       </script>
 </body>

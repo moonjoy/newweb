@@ -328,7 +328,7 @@ h6 {
 .project-two:hover {
   cursor: pointer; }
   .project-two:hover .project2 {
-    background: url(../../images/motion/magikku/magikku.gif) no-repeat 80% 50%; }
+    background: url(../../images/vr/magikku/magikku.gif) no-repeat 80% 50%; }
 
 .project-three:hover {
   cursor: pointer; }
@@ -611,12 +611,12 @@ textarea:focus {
 .next p {
   text-align: right; }
 
-.active {
+.active-link {
   background: #dddddd;
   padding: 3px 6px;
   border-radius: 4px;
   color: #000 !important; }
-  .active:hover {
+  .active-link:hover {
     color: #000 !important; }
 
 /*--------------- work page --------------- */

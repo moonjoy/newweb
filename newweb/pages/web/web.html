@@ -33,7 +33,7 @@
                   </span>
 
                    <ul id="menu" class="main-menu">
-                        <li><a href="../../pages/web/web.html" class="active">ui/ux</a></li>
+                        <li><a href="../../pages/web/web.html" class="active-link">ui/ux</a></li>
                         <li><a href="../../pages/vr/vr.html">vr</a></li>
                         <li><a href="../../pages/motion/motion.html">motion</a></li>
 
@@ -57,7 +57,7 @@
                   <div class="close-btn">close</div>
 
                   <ul id="menu">
-                        <li><a href="../../pages/web/web.html" class="active">ui/ux</a></li>
+                        <li><a href="../../pages/web/web.html" class="active-link">ui/ux</a></li>
                         <li><a href="../../pages/vr/vr.html">vr</a></li>
                         <li><a href="../../pages/motion/motion.html">motion</a></li>
                         <li><a href="../../pages/about/about.html">about me</a></li>
@@ -78,7 +78,7 @@
                               <div class="col-lg-8">
 
                                     <h3 class="wow fadeInUp" data-wow-delay="1s">UI/UX</h3><br>
-                                    <p class="wow fadeInUp" data-wow-delay="1.2s">I have worked as a web designer and developer for the past 5 years.</p>
+                                    <p class="wow fadeInUp" data-wow-delay="1.2s">I have been working as a web developer for the past 5 years. Throughout my journey as a front-end developer, I picked up techniques for faster and efficient implementation to build a website/ software. Also, working with clients for a long time helped me undertand their problem and give them the best possible solution with quality according to their needs.</p>
                               </div>
                         </div>
 
@@ -218,6 +218,7 @@
       <script type="text/javascript">
 
       // navigation starts here
+
       $("#toggle").click(function() {
             $(this).toggleClass('on');
             $("#resize").toggleClass("active");
@@ -234,6 +235,22 @@
       });
 
       // navigation ends here
+
+      $("ul.main-menu li.main-menu-item").click(function(e){
+            e.preventDefault();
+            if($(this).siblings("li").find("ul.submenu:visible").length){
+                  $("ul.submenu").slideup("normal");
+            }
+            $(this).find("ul.submenu").slideToggle("normal");
+      });
+
+      // submenu-item
+      $('.submenu-item').click(function(e){
+            e.preventDefault();
+             location.href = $(this).find('a').attr('href');
+      })
+
+
 
       // nav animation
 
@@ -253,7 +270,6 @@
       // nav animation ends
 
       new WOW().init();
-
 
       </script>
 </body>
