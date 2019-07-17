@@ -844,4 +844,7 @@ textarea:focus {
     padding: 3px 6px;
     border-radius: 4px;
     color: #000 !important;
+    &:hover {
+      color: #000 !important;
+    }
 }

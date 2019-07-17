@@ -109,3 +109,59 @@
     }
 }
 
+
+
+// motion project
+
+.motion-project1 {
+    background: url(../../images/motion/chapubakha/chapubakha.jpg) no-repeat 50% 50%;
+    background-size: 100%;
+
+    &::after {
+        content: "chagu bakha";
+        font-family: "Roboto Mono";
+        font-size: 36px;
+        position: relative;
+        color: #fff;
+        display: block;
+        top: 72%;
+        left: 96%;
+        right: 0;
+        bottom: 0;
+  }
+}
+
+.motion-one:hover {
+    cursor: pointer;
+    .motion-project1{
+      background: url(../../images/motion/chapubakha/chapubakha.gif) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+}
+
+
+.motion-project2 {
+    background: url(../../images/motion/micdrop/micdrop.png) no-repeat 50% 50%;
+    background-size: 100%;
+
+    &::after {
+        content: "mic drop";
+        font-family: "Roboto Mono";
+        font-size: 36px;
+        position: relative;
+        color: #fff;
+        display: block;
+        top: 48%;
+        left: -27%;
+        right: 0;
+        bottom: 0;
+  }
+}
+
+.motion-two:hover {
+    cursor: pointer;
+    .motion-project2{
+      background: url(../../images/motion/micdrop/micdrop2.gif) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+}

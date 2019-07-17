@@ -616,6 +616,8 @@ textarea:focus {
   padding: 3px 6px;
   border-radius: 4px;
   color: #000 !important; }
+  .active:hover {
+    color: #000 !important; }
 
 /*--------------- work page --------------- */
 .hero-content {
@@ -716,6 +718,48 @@ textarea:focus {
   cursor: pointer; }
   .vr-two:hover .vr-project2 {
     background: url(../../images/vr/mythicalland/mythicalland.gif) no-repeat 50% 50%;
+    background-size: 100%; }
+
+.motion-project1 {
+  background: url(../../images/motion/chapubakha/chapubakha.jpg) no-repeat 50% 50%;
+  background-size: 100%; }
+  .motion-project1::after {
+    content: "chagu bakha";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 72%;
+    left: 96%;
+    right: 0;
+    bottom: 0; }
+
+.motion-one:hover {
+  cursor: pointer; }
+  .motion-one:hover .motion-project1 {
+    background: url(../../images/motion/chapubakha/chapubakha.gif) no-repeat 50% 50%;
+    background-size: 100%; }
+
+.motion-project2 {
+  background: url(../../images/motion/micdrop/micdrop.png) no-repeat 50% 50%;
+  background-size: 100%; }
+  .motion-project2::after {
+    content: "mic drop";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 48%;
+    left: -27%;
+    right: 0;
+    bottom: 0; }
+
+.motion-two:hover {
+  cursor: pointer; }
+  .motion-two:hover .motion-project2 {
+    background: url(../../images/motion/micdrop/micdrop2.gif) no-repeat 50% 50%;
     background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */
